@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# apt-get install wrapper
+agi() {
+  local package="$1"
+  sudo apt-get install --yes "$package"
+}
+
+add_ppa() {
+  local ppa="$1"
+  agi python-software-properties
+  sudo apt-add-repository --yes "$ppa"
+  sudo apt-get update
+}
+
