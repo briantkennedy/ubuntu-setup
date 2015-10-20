@@ -19,3 +19,4 @@ agi docker-engine
 sudo usermod -aG docker $USER
 
 echo "log in to a new shell for group settings to take effect"
+echo "reccomended: apt-cacher-ng"
