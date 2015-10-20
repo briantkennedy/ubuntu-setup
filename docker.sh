@@ -17,3 +17,5 @@ agi docker-engine
 
 # set up docker group
 sudo usermod -aG docker $USER
+
+echo "log in to a new shell for group settings to take effect"
