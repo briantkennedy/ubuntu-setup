@@ -1,5 +1,5 @@
 #!/bin/bash
 
-. common.sh
+source $(dirname $0)/common.sh
 
 agi wine

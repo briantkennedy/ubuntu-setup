@@ -6,6 +6,6 @@
 
 set -x
 
-source ./common.sh
+source $(dirname $0)/common.sh
 add_ppa ppa:swi-prolog/stable
 agi swi-prolog

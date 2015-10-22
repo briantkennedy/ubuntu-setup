@@ -6,7 +6,7 @@
 
 set -x
 
-source ./common.sh
+source $(dirname $0)/common.sh
 
 add_ppa ppa:avsm/ocaml42+opam12
 agi ocaml
