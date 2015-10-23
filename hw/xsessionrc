@@ -1,5 +1,7 @@
 # copy to .xsessionrc
-id=$(xinput \
-  | grep "Evoluent VerticalMouse 3" \
-  | sed -e 's/.*id=\([0-9]*\).*/\1/')
-xinput set-button-map $id 1 2 2 4 5 6 7 3 9 10 11 12 13
+
+name="Evoluent VerticalMouse 3"
+if xinput | grep $name > /dev/null; then
+  id=$(xinput | grep $name | sed -e 's/.*id=\([0-9]*\).*/\1/')
+  xinput set-button-map $id 1 2 2 4 5 6 7 3 9 10 11 12 13
+fi
