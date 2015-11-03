@@ -1,8 +1,9 @@
 #!/bin/bash
 
-sudo apt-get update
-sudo apt-get install \
-  --yes \
+source $(dirname $0)/common.sh
+
+#sudo apt-get update
+agi \
   git \
   gitk \
   git-gui \
