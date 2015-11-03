@@ -15,3 +15,10 @@ add_ppa() {
   sudo apt-get update
 }
 
+cache_cfg=/etc/apt/apt.conf.d/01proxy
+disable_cache() {
+  mv $cache_cfg ./
+}
+enable_cache() {
+  mv ./01proxy $cache_cfg
+}
