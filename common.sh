@@ -1,5 +1,7 @@
 #!/bin/bash
 
+release="$(lsb_release -cs)"
+
 # apt-get install wrapper
 agi() {
   local package="$1"
