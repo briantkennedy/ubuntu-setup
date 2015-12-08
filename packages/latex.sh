@@ -2,5 +2,4 @@
 
 source $(dirname $0)/common.sh
 
-agi texlive-latex-base
-agi rubber
+agi texlive-latex-base rubber tex4ht
