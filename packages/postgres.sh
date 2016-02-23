@@ -8,8 +8,8 @@ case "$release" in
   "precise")
     repo="deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main"
     ;;
-  "*")
-    echo "handle repo for release $"
+  *)
+    echo "handle repo for release $release"
     exit 1
     ;;
 esac
