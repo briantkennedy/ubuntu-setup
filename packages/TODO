@@ -1,8 +1,14 @@
 Create debian meta package with equivs here.
 
+# Default
+whois
+inotify-tools
+
 # Audio
 audacious
 
+# Samba / cifs
+cifs-utils
 
 # dev stuff
-devscripts
+devscripts, debhelper

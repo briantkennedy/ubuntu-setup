@@ -5,6 +5,9 @@ source $dir/common.sh
 
 repo=""
 case "$release" in
+  "trusty")
+    repo="deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main"
+    ;;
   "precise")
     repo="deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main"
     ;;
