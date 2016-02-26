@@ -11,4 +11,5 @@ audacious
 cifs-utils
 
 # dev stuff
+graphviz
 devscripts, debhelper
