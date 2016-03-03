@@ -4,11 +4,14 @@ source $(dirname $0)/common.sh
 
 #sudo apt-get update
 agi \
+  cifs-utils \
+  curl \
   git \
   gitk \
   git-gui \
   git-doc \
   ipython \
+  inotify-tools \
   meld \
   openssh-server \
   openvpn \
@@ -18,4 +21,5 @@ agi \
   screen \
   stow \
   sysstat \
+  whois \
   vim

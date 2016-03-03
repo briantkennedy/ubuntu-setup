@@ -1,0 +1,16 @@
+#!/bin/bash
+
+source $(dirname $0)/common.sh
+
+# oracle java ppa
+add_ppa ppa:webupd8team/java
+
+agi \
+  apt-file \
+  debhelper \
+  devscripts \
+  graphviz \
+  oracle-java8-installer \
+
+# Update apt-file index
+sudo apt-file update
