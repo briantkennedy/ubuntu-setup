@@ -9,6 +9,7 @@ agi \
   apt-file \
   debhelper \
   devscripts \
+  equivs \
   graphviz \
   oracle-java8-installer \
 
