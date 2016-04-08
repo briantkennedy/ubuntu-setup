@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 dir="$(dirname $0)"
 source $dir/common.sh
 
@@ -10,6 +12,12 @@ case "$release" in
     ;;
   "precise")
     repo="deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main"
+    ;;
+  "wily")
+    repo="deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main"
+    ;;
+  "xenial")
+    repo="deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main"
     ;;
   *)
     echo "handle repo for release $release"
