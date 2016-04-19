@@ -6,4 +6,4 @@ deb https://apt.dockerproject.org/repo ubuntu-trusty main
 deb https://apt.dockerproject.org/repo ubuntu-vivid main
 # TODO: Uncomment this one after upgrading to wily
 # Ubuntu Wily
-#deb https://apt.dockerproject.org/repo ubuntu-wily main
+deb https://apt.dockerproject.org/repo ubuntu-wily main
