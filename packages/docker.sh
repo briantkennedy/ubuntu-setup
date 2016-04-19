@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -euo pipefail
 
 dir="$(dirname $0)"
 source $dir/common.sh
@@ -11,7 +11,9 @@ if [ ! -e $list ]; then
 sudo apt-key adv \
   --keyserver hkp://p80.pool.sks-keyservers.net:80 \
   --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-sudo cp -f $dir/etc/apt/sources.list.d/docker.list  $list
+echo "deb https://apt.dockerproject.org/repo ubuntu-$release main" \
+  | sudo tee $list \
+  > /dev/null
 sudo apt-get update
 fi
 
