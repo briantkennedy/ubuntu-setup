@@ -4,7 +4,7 @@
 # http://www.swi-prolog.org/build/Debian.html
 #
 
-set -x
+set -ex
 
 source $(dirname $0)/common.sh
 add_ppa ppa:swi-prolog/stable
