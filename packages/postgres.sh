@@ -7,16 +7,10 @@ source $dir/common.sh
 
 repo=""
 case "$release" in
-  "trusty")
+  "trusty") # 14.04
     repo="deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main"
     ;;
-  "precise")
-    repo="deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main"
-    ;;
-  "wily")
-    repo="deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main"
-    ;;
-  "xenial")
+  "xenial") # 16.04
     repo="deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main"
     ;;
   *)
