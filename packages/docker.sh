@@ -14,10 +14,13 @@ sudo apt-key adv \
 echo "deb https://apt.dockerproject.org/repo ubuntu-$release main" \
   | sudo tee $list \
   > /dev/null
-sudo apt-get update
+sudo apt-get update \
+  -o Dir::Etc::sourcelist="sources.list.d/$(basename $list)" \
+  -o Dir::Etc::sourceparts="-" \
+  -o APT::Get::List-Cleanup="0"
 fi
 
-agi docker-engine
+agi docker-engine apt-cacher-ng
 
 # set up docker group
 sudo usermod -aG docker $USER
