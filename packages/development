@@ -7,10 +7,13 @@ add_ppa ppa:webupd8team/java
 
 agi \
   apt-file \
+  clang \
   debhelper \
   devscripts \
   equivs \
+  gcc \
   graphviz \
+  m4 \
   oracle-java8-installer \
 
 # Update apt-file index
