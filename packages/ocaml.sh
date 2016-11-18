@@ -8,7 +8,7 @@ set -x
 
 source $(dirname $0)/common.sh
 
-add_ppa ppa:avsm/ocaml42+opam12
+add_ppa ppa:avsm/ppa
 agi ocaml opam
 
 # User level:
