@@ -13,13 +13,8 @@ agi \
   ipython \
   inotify-tools \
   meld \
+  net-tools \
   openssh-server \
-  openvpn \
-  parallel \
-  pigz \
-  pxz \
   screen \
-  stow \
   sysstat \
-  whois \
   vim
