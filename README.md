@@ -1,5 +1,4 @@
 # ubuntu-setup
-Scripts for setting up an ubuntu system.
 
-An attempt to mitigate the pain of rolling forward every 6 months to the new
-bleeding edge version.
+Custom stuff I've done to an ubuntu system.
+
