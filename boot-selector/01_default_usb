@@ -1,0 +1,14 @@
+#! /bin/sh
+#
+# Place this file in /etc/grub.d and update the drive UUID / default value as
+# appropriate.
+#
+
+set -e
+
+cat <<EOF
+search --fs-uuid --set switch_drive BE8C-3883
+if [ "\${switch_drive}" ] ; then
+   set default="2"
+fi
+EOF
